@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styleInformation.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div class = "center">
+                <h1 class = "header_text">Q&A and Tips</h1>
+            </div>
+            <div class = "groupOfButtons">
+                <button class="button" id = "HomePageButton" onclick="nextPageHomePage()">Home</button>
+                <button class="button" id = "LeaderboardButton" onclick="nextPageLeaderboard()">Leaderboard</button>
+                <button class="button" id = "CameraButton" onclick="nextPageCamera()">Camera</button>
+                <button class="button" id = "InformationButton" onclick="nextPageInformation()">Information</button>
+                <button class="button" id = "ProfileButton" onclick="nextPageProfile()">Profile</button>
+
+
+                
+                <script>
+                    function nextPageHomePage() {
+                        window.location.href = "HomePage1.html";
+                    }
+                    function nextPageLeaderboard() {
+                        window.location.href = "LeaderBoard1.html";
+                    }
+                    function nextPageCamera() {
+                        window.location.href = "Camera.html";
+                    }
+                    function nextPageInformation() {
+                        window.location.href = "Information.html";
+                    }
+                    function nextPageProfile() {
+                        window.location.href = "Profile.html";
+                    }
+
+        
+                </script> 
+            </div>
+        </div>
+       
+        <button class="button1">How advanced will the app be</button>
+        <button class="button2">How could the app be applied in other aspects</button>
+        <button class="button3">Additional Questions</button>
+        <h1 class = "headertext2">Suggestions and Comments</h1>
+        <form action="/url" method="GET">
+            <input class = "button4" type="text" name="trash" placeholder="Suggestions?" required>  
+        </form>
+
+
+    </body> 
+    </html>

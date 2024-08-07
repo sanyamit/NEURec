@@ -1,0 +1,196 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(151, 23%, 62%);
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  .groupOfButtons {
+    display: flex;
+    flex-direction: row;
+    position: absolute; 
+    bottom: 0;
+    align-items: end;
+    left: 0;
+} 
+
+
+.button {
+    background-color: #b6dcff;
+    color: rgb(0, 0, 0);
+    padding: 15px 113px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e3b2ff;
+}
+
+
+
+#popup-window {
+    position: fixed;
+    width: 300px;
+    height: 450px;
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 20;
+    left: 100;
+    z-index: 10;
+    display: none;
+  } 
+
+
+
+  .rectangle {
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    background-color: rgb(104, 153, 118);
+    }
+
+
+    .header3_text{
+    font-family: 'Nunito';
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    position: absolute;
+    top: 50px;
+    left: 110px;
+    }
+
+    .rcorners1 {
+        border-radius: 25px;
+        background: rgb(104, 153, 118);
+        padding: 20px;
+        position: absolute;
+        top: 450px;
+        left: 530px;
+        width: 300px;
+        height: 20px;
+      }
+
+      .header4_text
+      {
+        font-family: 'Nunito';
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        position: absolute;
+        top: -8px;
+        left: 10px;
+      }
+
+      .rcorners2 {
+        border-radius: 25px;
+        background: rgb(104, 153, 118);
+        padding: 40px;
+        position: absolute;
+        top: 530px;
+        left: 480px;
+        width: 350px;
+        height: 40px;
+      }
+
+      .header5_text
+      {
+        font-family: 'Nunito';
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+      }
+
+      .input{
+        position: absolute;
+        top: 610px;
+        left: 620px;
+      }
+      
+  .header_text {
+    font-family: 'Nunito';
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}

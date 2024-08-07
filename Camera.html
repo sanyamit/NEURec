@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./Camera_Style.css">
+        
+
+    </head> 
+    <body>
+        <div class="container">
+            <div class = "center">
+                <h1 class = "header_text">Hello UserName, </h1>
+            </div>
+            <div class = "groupOfButtons">
+                <button class="button" id = "HomePageButton" onclick="nextPageHomePage()">Home</button>
+                <button class="button" id = "LeaderboardButton" onclick="nextPageLeaderboard()">Leaderboard</button>
+                <button class="button" id = "CameraButton" onclick="nextPageCamera()">Camera</button>
+                <button class="button" id = "InformationButton" onclick="nextPageInformation()">Information</button>
+                <button class="button" id = "ProfileButton" onclick="nextPageProfile()">Profile</button>
+
+
+                
+                <script>
+                    function nextPageHomePage() {
+                        window.location.href = "HomePage1.html";
+                    }
+                    function nextPageLeaderboard() {
+                        window.location.href = "LeaderBoard1.html";
+                    }
+                    function nextPageCamera() {
+                        window.location.href = "Camera.html";
+                    }
+                    function nextPageInformation() {
+                        window.location.href = "Information.html";
+                    }
+                    function nextPageProfile() {
+                        window.location.href = "Profile.html";
+                    }
+
+        
+                </script> 
+                
+
+            </div>
+        </div>
+       
+        
+        <a href="#" id="popup-link">Description of different types of Rubbish</a>
+        <div id="popup-window">
+            <h1>Rubbish Description</h1>
+            <p>Clean Plastic</p>
+            <p>Food contaminated Plastic</p>
+            <p>Cardboard</p>
+            <p>Food contaminated cardboard</p>
+            <p>Paper Towel</p>
+            <p>Wooden mixing stick</p>
+            <p>Food waste</p>
+            <p>Metal Peice</p>
+            <p>Glass</p>
+            <h3>Once read, choose the right bin</h3>
+            <button id="close-button">Close</button>
+          </div> 
+          <div class="rectangle"><h3 class = "header3_text">Camera</h3></div>
+          
+
+          <div class ="rcorners1"><h4 class = "header4_text">What bin did you throw your trash in?</h4></div>
+          <div class="rcorners2"><h3 class = "header5_text">General Waste &nbsp &nbsp &nbsp Dry &nbsp &nbsp &nbsp Mix Glass</h3></div>
+
+          <script>
+            // Get the elements by their ID
+            var popupLink = document.getElementById("popup-link");
+            var popupWindow = document.getElementById("popup-window");
+            var closeButton = document.getElementById("close-button");
+            // Show the pop-up window when the link is clicked
+            popupLink.addEventListener("click", function(event) {
+              event.preventDefault();
+              popupWindow.style.display = "block";
+            });
+            // Hide the pop-up window when the close button is clicked
+            closeButton.addEventListener("click", function() {
+              popupWindow.style.display = "none";
+            });
+          </script>  
+          
+          <form action="/url" method="GET">
+            <input class = "input" type="text" name="trash" placeholder="General Waste" required>  
+        </form>
+
+    </body> 
+    </html>
